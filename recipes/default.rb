@@ -140,8 +140,8 @@ node['tomcat']['instances'].each do |name, attrs|
     tmp_dir attrs['tmp_dir']
     lib_dir attrs['lib_dir']
     endorsed_dir attrs['endorsed_dir']
-    ajp_packetsize attrs['ajp_packetsize']
-    uriencoding attrs['uriencoding']
+    # ajp_packetsize attrs['ajp_packetsize']
+    # uriencoding attrs['uriencoding']
   end
 
   instance = "#{node['tomcat']['base_instance']}-#{name}"
